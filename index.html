@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <p>The Code Review</p>
+    </header>
+
+    <main>
+      <div class="text-center">
+        <h1>Sign up for our newsletter</h1>
+        <p class="text-light">Get all sorts of spam right in your inbox.</p>
+      </div>
+
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <div class="flex-container-fields">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Required"
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Required"
+            />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Optional" />
+
+            <label for="address">Street Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Optional"
+            />
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Optional" />
+
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="">Choose a state:</option>
+              <option value="solid">Solid</option>
+              <option value="liquid">Liquid</option>
+              <option value="gas">Gas</option>
+              <option value="plasma">Plasma</option>
+            </select>
+
+            <label for="zip">Zip Code</label>
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              class="zip"
+              placeholder="Optional"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Newsletter</legend>
+          <label class="text-light"
+            >Select the newsletters you would like to receive.</label
+          >
+
+          <div class="flex-container-boxes">
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="html-news"
+              value="html-news"
+            />
+            <label for="html-news">HTML News</label>
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="css-news"
+              value="css-news"
+            />
+            <label for="css-news">CSS News</label>
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="javascript-news"
+              value="javascript-news"
+            />
+            <label for="javascript-news">Javascript News</label>
+          </div>
+
+          <label class="text-light">Newsletter format</label>
+          <div class="flex-container-boxes">
+            <input type="radio" name="format" value="html" id="format-html" />
+            <label for="format-html">HTML</label>
+            <input type="radio" name="format" value="text" id="format-text" />
+            <label for="format-text">Plain text</label>
+          </div>
+
+          <label for="other-topics"
+            >Other topics you'd like to hear about</label
+          >
+          <textarea id="other-topics" name="other-topics"></textarea>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </main>
+
+    <footer>
+      <p class="text-center text-light">&copy; The Code Review</p>
+    </footer>
+  </body>
+</html>

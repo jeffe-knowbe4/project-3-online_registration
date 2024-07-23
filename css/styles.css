@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  background-color: #fff;
+  color: #234;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #234;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+main {
+  padding: 1.25rem 1rem 2rem;
+}
+
+form {
+  border-top: 4px solid #234;
+  padding-top: 3px;
+  margin-top: 2rem;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+legend {
+  border-top: 2px solid #003;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 1.25rem 0;
+}
+
+fieldset,
+legend,
+label,
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea,
+select {
+  background-color: #f3f3f3;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  color: #bbb;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #006;
+  box-shadow: inset 5px 5px 5px -2px rgba(10, 20, 30, 0.25);
+  outline: none;
+}
+
+input.zip {
+  width: 50%;
+}
+
+label {
+  color: #888;
+  padding-bottom: 0.25rem;
+  transition: font-weight 200ms ease-in-out;
+}
+
+textarea {
+  min-height: 6rem;
+}
+
+.flex-container-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.flex-container-boxes input {
+  flex: 0 10vw;
+  margin: 0;
+  height: 1rem;
+}
+
+.flex-container-boxes label {
+  flex: 5 80vw;
+  margin: 0 auto 0 0;
+}
+
+.flex-container-boxes input:checked + label {
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #4ba;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+footer {
+  background-color: #234;
+  padding: 2rem 1rem 5rem;
+}
+
+footer p {
+  font-style: italic;
+  margin: 1rem 0 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-light {
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  main,
+  xfooter {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    padding: 3rem 0 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  fieldset {
+    margin-bottom: 2rem;
+  }
+
+  legend {
+    padding-top: 2rem;
+  }
+
+  .flex-container-fields label,
+  .flex-container-fields input,
+  .flex-container-fields select {
+    display: inline-block;
+  }
+  .flex-container-fields label {
+    width: calc(25% - 1rem);
+    padding: 1rem 0 1rem;
+  }
+  .flex-container-fields label + input,
+  .flex-container-fields label + select {
+    width: 75%;
+  }
+
+  .flex-container-fields input.zip {
+    width: 25%;
+  }
+
+  .flex-container-boxes input {
+    flex: 0 50px;
+    margin: 0;
+    height: 1rem;
+  }
+
+  .flex-container-boxes label {
+    flex: 5 520px;
+    margin: 0 auto 0 0;
+  }
+}

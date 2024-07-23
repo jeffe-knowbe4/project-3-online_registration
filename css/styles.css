@@ -74,7 +74,8 @@ select {
   transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   text-align: right;
   font-style: italic;
   color: #bbb;

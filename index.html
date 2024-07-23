@@ -57,7 +57,7 @@
 
             <label for="state">State</label>
             <select id="state" name="state">
-              <option value="">Choose a state:</option>
+              <option value="" disabled selected>Choose a state:</option>
               <option value="solid">Solid</option>
               <option value="liquid">Liquid</option>
               <option value="gas">Gas</option>
@@ -116,7 +116,11 @@
           <label for="other-topics"
             >Other topics you'd like to hear about</label
           >
-          <textarea id="other-topics" name="other-topics"></textarea>
+          <textarea
+            id="other-topics"
+            name="other-topics"
+            placeholder="Cat News, Dog News, etc"
+          ></textarea>
         </fieldset>
 
         <button type="submit">Sign Up</button>
